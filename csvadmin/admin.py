@@ -1,6 +1,8 @@
 import csv
 from django.http import HttpResponse
 from django.template.defaultfilters import slugify
+from django.contrib import admin
+from django.db.models import FieldDoesNotExist
 
 class CSVAdmin(admin.ModelAdmin):
     """
